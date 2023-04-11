@@ -64,6 +64,15 @@ nav img {
   height: auto;
 }
 
+@media only screen and (max-width: 520px) {
+  nav {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8rem;
+  }
+}
+
 /* ----- Mission ----- */
 
 .mission {
@@ -86,6 +95,21 @@ nav img {
 .mission__card p {
   line-height: 1.5;
   text-align: justify;
+}
+
+@media only screen and (max-width: 920px) {
+  .mission {
+    text-align: left;
+    padding: 0 var(--gutter-medium);
+  }
+  .mission-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mission__card {
+    width: 100%;
+  }
 }
 
 /* ----- Products ----- */
@@ -174,4 +198,24 @@ nav img {
 
 .team__card h3 {
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .team {
+    width: 100%;
+    text-align: center;
+    padding: 1rem var(--gutter-medium) 0;
+    background-color: rgb(225, 225, 225);
+    height: 83rem;
+  }
+
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    width: 100%;
+  }
 }
